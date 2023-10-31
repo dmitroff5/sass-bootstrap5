@@ -1,0 +1,80 @@
+.menuContainer {
+/* 	position: relative; */
+	width: 100%;
+}
+.menu-triger {
+	display: none;
+	/* width: 25px;
+	height: 17px;	 */
+	/* background: url(https://snipp.ru/demo/449/menu.png) 0 0 repeat; */
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	border: 2px solid #005a59;
+	border-radius: 5px;
+	color: white;
+	padding: 12px 16px;
+	font-weight: bold;
+	font-size: 30px 	 
+}	
+.menu-triger:hover{
+   color: #005a59;
+}
+.menu-close {
+	display: block;
+	width: 40px;
+	height: 40px;	
+	font-size: 36px;
+	font-weight: bold;
+	/* background: url(https://snipp.ru/demo/449/close.png) 0 0 repeat; */
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 100;
+	color: #005a59;
+	font-size: 30px;
+}
+.menu-popup {
+	display: none;	
+	background: rgb(0, 164, 162);
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: 9999;	
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border: 1px solid #005a59
+}
+.menu-popup ul {
+	margin: 0;
+	padding: 0;
+}
+.menu-popup li {
+	display: block;
+	list-style: none;
+	margin:  0;
+	padding: 0;
+	
+}
+.menu-popup li a {
+	display: inline-block;
+	font-size: 22px;
+	font-family: "Arial";
+	color: white;
+	line-height: 1.3;	
+	text-decoration: none;
+	padding: 8px 0;
+}
+.menu-popup ul li .active{
+	color: #005a59;
+}
+.body_pointer * {
+	cursor: pointer;
+}
+@media only screen and (max-width: 846px) {
+	.menu-triger{
+    display: block;
+  }
+}

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+html {
+  height: 100%;
+}
+
+* {
+  white-space: normal;
+}
+
+body {
+  height: 100%;
+  font: 20px/30px Roboto, sans-serif, Tahoma;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Roboto;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Параллакс эффект*/
+.parallax {
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Анимация*/
+button {
+  display: inline-block;
+}
+
+.btn-animation {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+}
+
+#wrapper {
+  width: 1000px;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+.agreement {
+  margin: 20px 0 0px;
+  font-weight: bold;
+}
+.agreement a {
+  color: #028B4F;
+}
+.agreement a:hover {
+  color: green;
+}
+
+.agreement_top {
+  margin-top: 40px;
+  padding: 6px;
+}
+
+.agreement_name {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.agreement_text {
+  font-size: 20px;
+}
+
+/*Форма*/
+/*Попап*/ 
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.popup, .popup_no, .popup_error {
+  display: none;
+  position: fixed;
+  width: 400px;
+  z-index: 100;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 1px grey;
+  background-color: white;
+  border: 1px solid green;
+}
+
+.popup, .popup_no, .popup_error {
+  top: 50px;
+  /* Firefox */
+  left: -moz-calc(50% - 200px);
+  /* WebKit */
+  left: -webkit-calc(50% - 200px);
+  /* Opera */
+  left: -o-calc(50% - 200px);
+  /* Standard */
+  left: calc(50% - 200px);
+}
+
+.close {
+  display: block;
+  cursor: pointer;
+  line-height: 24px;
+  background: #fff;
+  color: red;
+  border: 1px solid red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+}
+
+/* Футер */
+footer {
+  background-color: #04376c;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer_container {
+  width: 1200px;
+  max-width: 98%;
+  margin: 0 auto;
+  color: white;
+  font-size: 18px;
+}
+
+.smartphone_first, .smartphone_second, .smartphone_third {
+  margin: 0px 0px 20px 0px;
+  width: 300px;
+  max-width: 98%;
+  text-align: left;
+}
+
+.width_enter {
+  width: 300px;
+  margin: 0 auto;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.class_01 a i {
+  font-size: 20px;
+  margin: 0px 14px 0 0;
+  padding: 14px;
+  border: 1px solid #689cd2;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.copy {
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+/*Большие девайсы (большие десктопы, >= 1200px)*/
+/* Большие девайсы (большие десктопы, >= 992px)*/
+/* Средние девайсы («таблетки», >= 768px)  */
+/* Малые девайсы («ландшафтные», >= 575px) */
+/* Экстрамалые девайсы («портретные телефоны», < 576px)*/
